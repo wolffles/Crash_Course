@@ -10,7 +10,7 @@
   * forEach() function callback on every element
     ary.forEach(function(element,index,array))
     ```
-      ary.forEach((ele,index,array)optional => { code })
+      ary.forEach((ele,index,array)parameter optional => { code })
     ```
 
   * .every() is a condition check for everything in the array should return boolean
