@@ -1,5 +1,6 @@
 #CSS NOTES
 # GENERAL
+  * CSS is able to animate without js. using @keyframe 
   * box model: everything in the dom renders elements on your page, it renders everything as a box
   * boxes will fill the width of parent by 100% with padding. if you set the width they will pertrude out.  (seems like by default its a border-box if yous set width its a content-box)
 # SYNTAX 

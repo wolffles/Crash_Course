@@ -1,5 +1,9 @@
 # Javascript ES6
+# ADVANCED NOTES
+  * {} objects in javascript are dictionaries, meaning strings keys. a new Map is also an object but a Map object are key/value pairs that have any value
 
+  * +"2345" => 2345
+  The + operator returns the numeric representation of the object.
 # ARRAY.PROTOTYPE
 ## PROPERTIES
   * negative indexes dont work like they do in ruby. 
@@ -7,6 +11,11 @@
     `array.length-1 -=1 if you want to work backwards` 
 
 ## METHODS
+  * array.reverse()
+  * array.map(currentValue[, index[, array]] => { return block})
+  ``` 
+    array.map((ele,index) => dont need return value if {} needs return value)
+  ```
   * forEach() function callback on every element
     ary.forEach(function(element,index,array))
     ```
@@ -22,7 +31,15 @@
       [12, 5, 8, 130, 44].every(isBigEnough);   // false
       [12, 54, 18, 130, 44].every(isBigEnough); // true
     ```
-  * ary.splice(index,0,item) can be used as an insert. or remove
+  * ary.splice(index,delete_count, ...items) can be used as an insert. or remove
+    ```
+      // this inserts a removed item depending on position from(item to be moved) & to(item to end up.)
+
+      Array.prototype.move = function(from, to) {
+          this.splice(to, 0, this.splice(from, 1)[0]);
+          return this;
+      };
+    ```
 
 # OPERATORS 
  * = assigning a variable to another variable will reference that variable. 
@@ -63,3 +80,4 @@
 
 # STRINGS
  * [] works on strings but not numbers
+ * string.prototype.repeat(n) the * operator doesn't work like ruby on strings. 
