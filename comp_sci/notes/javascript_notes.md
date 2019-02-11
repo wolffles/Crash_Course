@@ -4,6 +4,8 @@
 
   * +"2345" => 2345
   The + operator returns the numeric representation of the object.
+
+  * regex does not match overlapping values
 # ARRAY.PROTOTYPE
 ## PROPERTIES
   * negative indexes dont work like they do in ruby. 
@@ -41,6 +43,8 @@
       };
     ```
 
+  * ary.sort((a,b) => a-b ) small to great b-a is great to small
+
 # OPERATORS 
  * = assigning a variable to another variable will reference that variable. 
   In JavaScript, it’s just NOT possible to have a reference from one variable to another variable. And, only compound values (Object, Array) can be assigned by reference
@@ -69,15 +73,30 @@
   ## CONDITIONALS 
   If(array) can return if an array is null or undefined if its truthy
 
+  * SWITCH AND CASE 
+    If break is omitted, the next code block in the switch statement is executed. 
+    ```
+      switch(expression){
+        case <outcome>:
+          //do something
+        default:
+          // do something.
+      }
+    ```
+
+
   ## LOOPS
   for (<index_var> in enumerable_object) { ...
   }
 
 # INTEGERS/ NUMBERS
   * <var>.toString() cannot do any intger has to be a number. Also try JSON.stringify(23432)
-  * '${number_var}', `123` ""+123 || variable
+  * '${number_var}', \`123\` ""+123 || variable
   * NUMBER("234") converts string to number
 
 # STRINGS
  * [] works on strings but not numbers
  * string.prototype.repeat(n) the * operator doesn't work like ruby on strings. 
+
+
+#REGEX
