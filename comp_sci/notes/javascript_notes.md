@@ -100,3 +100,4 @@
 
 
 #REGEX
+ * refer and read all the rules for regex https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
