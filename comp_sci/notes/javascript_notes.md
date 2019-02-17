@@ -6,6 +6,7 @@
   The + operator returns the numeric representation of the object.
 
   * regex does not match overlapping values
+  * javascript does not support lookbehinds.
 # ARRAY.PROTOTYPE
 ## PROPERTIES
   * negative indexes dont work like they do in ruby. 
@@ -100,4 +101,7 @@
 
 
 #REGEX
- * refer and read all the rules for regex https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+ * refer and read all the rules for regex 
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+ * when checking for literal brackets you only need [\] to escape the closing bracket. 
