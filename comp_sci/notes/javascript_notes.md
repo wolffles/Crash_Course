@@ -1,4 +1,17 @@
 # Javascript ES6
+# ADVANCED TRICKS
+  * creating ranges (see helper /exercises/helper functions)
+
+  * creating recursive functions
+    - start with the end condition and return
+    ```
+      function range(start, end) {
+        if(start === end) return [start];
+        // recursive case
+      }
+    ```
+  *
+  
 # ADVANCED NOTES
   * {} objects in javascript are dictionaries, meaning strings keys. a new Map is also an object but a Map object are key/value pairs that have any value
 
@@ -43,6 +56,13 @@
           return this;
       };
     ```
+  * ary.reducer() returns accumulator after the array has been iterated. 
+  ```
+    [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
+      return accumulator + currentValue;
+    });
+  ```
+
 
   * ary.sort((a,b) => a-b ) small to great b-a is great to small
 
@@ -93,7 +113,7 @@
 # INTEGERS/ NUMBERS
   * <var>.toString() cannot do any intger has to be a number. Also try JSON.stringify(23432)
   * '${number_var}', \`123\` ""+123 || variable
-  * NUMBER("234") converts string to number
+  * Number("234") converts string to number
 
 # STRINGS
  * [] works on strings but not numbers
