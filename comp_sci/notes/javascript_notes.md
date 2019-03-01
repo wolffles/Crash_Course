@@ -118,6 +118,7 @@
 # STRINGS
  * [] works on strings but not numbers
  * string.prototype.repeat(n) the * operator doesn't work like ruby on strings. 
+* string.slice(start,end) similar to array.splice. also can take negative numbers counting backwards.
 
 
 #REGEX
@@ -125,3 +126,10 @@
  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
  * when checking for literal brackets you only need [\] to escape the closing bracket. 
+
+## REGEX METHODS
+  * /regex_pattern/.test("string")
+     console.log(/word/.test("wordfjygi")) => true
+  * regexObj.exec(str) 
+      console.log(/word/.exec("wordfjygiword")) => ["word"]
+      // it returns only the first match
