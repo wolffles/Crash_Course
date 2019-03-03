@@ -28,6 +28,7 @@
 
 ## METHODS
   * array.reverse()
+  * array.filter((ele[,idx,array]) => condition)
   * array.map(currentValue[, index[, array]] => { return block})
   ``` 
     array.map((ele,index) => dont need return value if {} needs return value)

@@ -4,7 +4,6 @@
 // You must write a function that changes to a given case. 
 // It must be able to handle all three case types:
 
-
 function split(string) {
   if (string.includes('-')) { return string.split('-') }
   else if (string.includes('_')) { return string.split('_') }
@@ -14,31 +13,33 @@ function split(string) {
         return el.toLowerCase()
       })
   }
+  else return [string]
 }
 
 function capitalize(string) {
   return string.length > 1 ? string[0].toUpperCase() + string.slice(1) : string[0].toUpperCase()
 }
 
-function validate(string){
+function validate(string) {
   let ary = [];
   ary.push(/-/.exec(string))
   ary.push(/_/.exec(string))
   ary.push(/[A-Z]/.exec(string))
-  if (ary.filter(el => el !== null).length > 1) { return "invalid"}
+  if (ary.filter(el => el !== null).length > 1) { return "invalid" }
   return "valid"
 }
 
 function changeCase(string, type) {
-  if (validate(string) === "invalid"){return undefined}
+  if (typeof string != "string") { return undefined }
+  if (validate(string) === "invalid") { return undefined }
   if (string === "") { return "" }
-  ary = split(string)
+  let ary = split(string)
   switch (type) {
     case "snake":
       return ary.join("_");
     case "camel":
       return ary.map((ele, idx) => {
-        return idx > 1 ? capitalize(ele) : ele
+        return idx > 0 ? capitalize(ele) : ele
       }).join('')
     case "kebab":
       return ary.join('-')
@@ -46,6 +47,7 @@ function changeCase(string, type) {
       return undefined;
   }
 }
+
 
 console.log(changeCase("snakeCase", "snake"))
 // "snake_case"
