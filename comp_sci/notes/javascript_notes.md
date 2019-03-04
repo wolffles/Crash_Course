@@ -13,10 +13,26 @@
   *
   
 # ADVANCED NOTES
+  ## PRIMITIVES AND REFERENCES
+  * In js there are primitive data types and reference data types. 
+  * PRIMITIVE: referenced by VALUE
+    - boolean
+    - Number
+    - String
+    - Null
+    - Undefined 
+    - Symbol
+  * REFERENCES: are a Point to memory address
+    - Objects {}
+    - Arrays
+
+
+
   * {} objects in javascript are dictionaries, meaning strings keys. a new Map is also an object but a Map object are key/value pairs that have any value
 
-  * +"2345" => 2345
-  The + operator returns the numeric representation of the object.
+  * +"2345" => 2345 NUMBER
+  * 1+"34" => "134" STRING
+  The + operator byitself returns the numeric representation of the object.
 
   * regex does not match overlapping values
   * javascript does not support lookbehinds.
@@ -27,6 +43,8 @@
     `array.length-1 -=1 if you want to work backwards` 
 
 ## METHODS
+  * array.split('')
+  * array.join('')
   * array.reverse()
   * array.filter((ele[,idx,array]) => condition)
   * array.map(currentValue[, index[, array]] => { return block})
