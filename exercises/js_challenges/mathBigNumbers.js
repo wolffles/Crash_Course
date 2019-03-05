@@ -35,3 +35,29 @@ function subtract(minuend, subtrahend) {
   }
   return Number(sum.join('')) + "";
 }
+
+function multiply(multiplicand, multiplier) {
+
+
+  multiplicand = multiplicand.split('')
+  multiplier = multiplier.split('')
+  let j,
+    isum = 0,
+    sum = [],
+    i
+  while (multiplicand.length !== multiplier.length) {
+    multiplicand.length < multiplier.length ? multiplicand.unshift('') : multiplier.unshift('')
+  }
+  for (i = multiplier.length - 1; i >= 0; i--) {
+    isum = multiplier.length - 1 - i
+    for (j = multiplicand.length - 1; j >= 0; j--) {
+      sum[isum] ? sum[isum] += Number(multiplicand[i]) * Number(multiplier[j]) : sum[isum] = Number(multiplicand[i]) * Number(multiplier[j])
+      if (String(sum[isum]).length > 1) {
+        sum[isum + 1] ? sum[isum + 1] += +String(sum[isum]).slice(0, 1) : sum[isum + 1] = +String(sum[isum]).slice(0, 1)
+        sum[isum] = +String(sum[isum]).slice(1)
+      }
+      isum++
+    }
+  }
+  return Number(sum.reverse().join('')) + ""
+}
