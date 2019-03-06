@@ -66,7 +66,7 @@
       [12, 5, 8, 130, 44].every(isBigEnough);   // false
       [12, 54, 18, 130, 44].every(isBigEnough); // true
     ```
-  * ary.splice(index,delete_count, ...items) can be used as an insert. or remove
+  * ary.splice(index,delete_count, ...items) can be used as an insert. or remove (destructive)
     ```
       // this inserts a removed item depending on position from(item to be moved) & to(item to end up.)
 
@@ -75,6 +75,7 @@
           return this;
       };
     ```
+    ary.slice(index, end_index(non-inclusive)) non destructive
   * ary.reducer() returns accumulator after the array has been iterated. 
   ```
     [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
@@ -131,13 +132,17 @@
 
 # INTEGERS/ NUMBERS
   * <var>.toString() cannot do any intger has to be a number. Also try JSON.stringify(23432)
+  * 234+"" => "234"
+  * +"234" = > 234 
   * '${number_var}', \`123\` ""+123 || variable
   * Number("234") converts string to number
 
 # STRINGS
+  *
+  * "03" > '12' -> true  & "3" > "12" false 
  * [] works on strings but not numbers
  * string.prototype.repeat(n) the * operator doesn't work like ruby on strings. 
-* string.slice(start,end) similar to array.splice. also can take negative numbers counting backwards.
+* string.slice(start,end_index) (end is non inclusive) also can take negative numbers counting backwards.
 
 
 #REGEX
