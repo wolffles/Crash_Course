@@ -26,6 +26,7 @@
     - Objects {}
     - Arrays
 
+  * undefined and null: Undefined means a variable has been declared but never assigned. JS does not assign null it must be done programatically. Undified is a type itself "undefined" while null is a type of "object"
 
 
   * {} objects in javascript are dictionaries, meaning strings keys. a new Map is also an object but a Map object are key/value pairs that have any value
@@ -82,9 +83,16 @@
       return accumulator + currentValue;
     });
   ```
-
+  * Array.copyWithin(target[,start_index[,end]]) // negative start/end index applies start at end: copies part of an array to another location in the same array and returns it, without  modifying its size. 
 
   * ary.sort((a,b) => a-b ) small to great b-a is great to small
+
+  array.entries() : returns a new Array iterator object that contains the key/value pairs for each index in the array.
+  ``` 
+    var array = ['a','b','c']
+    var iterator = array1.entries();
+    console.log(iterator.next().value); //[0,'a']
+    console.log(iterator1.next().value); //[1,'b']
 
 # OPERATORS 
  * = assigning a variable to another variable will reference that variable. 

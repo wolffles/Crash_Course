@@ -14,4 +14,26 @@
   - Objects {}
   - Arrays
 
+## PROTOTYPES
+* all javascript objects inherit properties and methods from a prototype:
+* you can add attributes or methods to the prototype properties
+  - attribute and function example
+    ```
+      function Person(first, last, age, eyecolor) {
+        this.firstName = firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eyecolor;
+      } 
+
+      Person.prototype.nationailty = 'English'
+      Person.prototype.name = function() {
+        return this.firstName + " " + this.lastName;
+      }
+      
+      foo = new Person('man', 'woo', 23, 'brown')
+      console.log(foo)
+      console.log(foo.name())
+    ```
+
 
