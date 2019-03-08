@@ -37,9 +37,14 @@
 ## Iteration methods 
 
   * array.entries() : returns a new Array iterator object that contains the key/value pairs for each index in the array.
+  * array.values() : returns a new array Iterator object that contains the values for each index in the array
   * array.every(ele[,idx,array,thisArg]=> {}) : returns true if every eleent in array satisfies the provied test
   * array.filter(ele[,idx[,array[,thisArg]]]=>{}) creates a new array with all the elements of this array that the filtering function returns true.
   * array.find(ele[,idx,array,thisArg] => {}) : returns the first found value in the array, 
   * array.findIndex(ele[,idx,array,thisArg] => {}) : returns the index of the first element in the array that satisfied the provided testing function. Otherwise it returns -1.
   * array.forEach(ele[,index,array] => {}[,thisArg]) : Method executes a provided function once for each array element. non mutating
   * array.map(ele[,index,array] => {}[,thisArg]) Creates a new array witht he results of calling a provided function on every element in this array. 
+  * array.reduce(accumulator, ele[, idx, array] => {}[,initalValue]) : Apply a function against an accumulator and each value of the array from left to right. 
+  * array.reduceRight(accumulator, ele[, idx, array] => {}[,initalValue]) :Apply a function against an accumulator and each value of the array from right to left. 
+  * array.some(ele[,idx, array]=> {}[,thisArg]) : returns true if at least one element in this array satisfies the provided testing function.
+  
