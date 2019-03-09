@@ -151,6 +151,7 @@
  * [] works on strings but not numbers
  * string.prototype.repeat(n) the * operator doesn't work like ruby on strings. 
 * string.slice(start,end_index) (end is non inclusive) also can take negative numbers counting backwards.
+* string.match(regexp) : returns the result of matching a string against a regular expression. (to interpolate into a regex use new RegExp(pattern[,flags])) `new RegExp(variable, "gi")
 
 
 #REGEX

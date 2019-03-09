@@ -13,7 +13,7 @@ return 'cat'[0] // returns "c"
   * string.endsWith(searchStirng[, lenght]) : returns true/false if the string ends with the character of another string.
   * string.indexOf(searchValue[, fromIndex]) : Returns the index of the first occurance of the value.
   * string.lastIndexOf(value[,fromIndex]) : returns the index of the last occurance of the value. 
-  * string.match(regexp) : returns the result of matching a string against a regular expression. 
+  * string.match(regexp) : returns the result of matching a string against a regular expression.
   * string.repeat(count) : returns a string consisting of the elements of the object repeated the given times
   * string.replace(regex|substr, newsubStr| function) : Used to find a match between a regualar expression and a string, and to replace the matched substring with a new substring.
   * string.search(regex) : returns index of the found match. -1 if not found
@@ -26,4 +26,4 @@ return 'cat'[0] // returns "c"
   * string.trimStart() & string.trimLeft() removes white space from beginning.
   * string.trimRight() & string.trimEnd() : Trims whitespace form the end of the string. 
   * string.valueOf() Returns the primitive value of the specified object. String Object {'string'}
-  
+
