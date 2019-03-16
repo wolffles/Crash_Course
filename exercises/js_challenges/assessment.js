@@ -33,3 +33,21 @@ var mergeLinkedLists = function (list1, list2, merged = null) {
   }
 
 }
+
+
+
+
+
+//Implement an algorithm to determine if a string has all unique characters.
+// isUnique("hello"); false
+// isUnique("nike"); true
+function isUnique(string, i = 0) {
+  let regex = new RegExp(string[i], 'gi')
+  if (i > string.length - 1) {
+    return true
+  } else if (string.match(regex).length > 1) {
+    return false
+  } else {
+    return isUnique(string, i + 1)
+  }
+}
