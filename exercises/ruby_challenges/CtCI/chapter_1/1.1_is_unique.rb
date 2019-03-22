@@ -1,4 +1,4 @@
-# // is unique: Implement an algorithm to determine if a string \
+# // is unique: Implement an algorithm to determine if a string
 # // has all unique charaters.
 
 # //able to use data structures, we could use an array or a hash set. 
