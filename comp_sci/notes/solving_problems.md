@@ -18,3 +18,9 @@
 # talking about time/ space complexity.
   * when saying big O(n) say where n is length of array or length of input. 
 
+
+
+
+
+if you cant think of a better algorithm than brute force talk about the brute force method.
+  * usaually a clever solution involves breaking down how you determing if an answer is correct or not. ie: comparing every letter to just counting the number of times it shows up. 
