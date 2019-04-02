@@ -1,5 +1,8 @@
-#General notes to know 
+# General notes to know 
 
+
+## Describe the javascript event Loop
+  Javascript 
 * Functional programing (Declarative pattern)
   # key principle
     * functional progamming is a programing paradigm a paradigm(model or pattern)
