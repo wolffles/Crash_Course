@@ -1,8 +1,18 @@
 # General notes to know 
+## how does the web work?
+  * The web has a bunch of layers (Application, TCP, Internet, Hardware layers) that are all connected. But basically, it works through HTTP. 
+  * HTTP works lieka request-response cycle in the client-server model. 
+  * We type the google url and the client submits the HTTP request to the server the server returns the HTTP response in that case the response is the HTML from Google's websites. 
+  * the client does the request and recieves the response from the server. the client/browser handles the UI and the user interactions. 
+  * ther server stores and retrieves data on databases. proces logic on the background(workers/jobs), and alot of other things. 
+
+## Request Response cycle of a full stack application 
+  * googling this will explain how most full stack applications work
+
 
 
 ## Describe the javascript event Loop
-  Javascript 
+
 * Functional programing (Declarative pattern)
   # key principle
     * functional progamming is a programing paradigm a paradigm(model or pattern)
