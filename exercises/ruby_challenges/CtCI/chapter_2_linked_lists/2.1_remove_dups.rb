@@ -28,14 +28,14 @@ def remove_dups(head)
   while(temp.next != nil)
     if(hash[temp.next.data] === nil)
       hash[temp.next.data] = true 
-      temp = temp.next
     else 
       temp = remove_next(temp)
-      temp = temp.next 
+    end
+    if (temp.next != nil) 
+      temp = temp.next
     end
   end
   return head 
 end
 
 p remove_dups(list)
-p list

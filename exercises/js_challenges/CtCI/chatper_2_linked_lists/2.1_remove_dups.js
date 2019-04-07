@@ -27,9 +27,10 @@ function remove_dups(head) {
   while (temp.next != null) {
     if (hash[temp.next.data] === undefined) {
       hash[temp.next.data] = true
-      temp = temp.next
     } else {
       temp = remove_next(temp)
+    }
+    if(temp.next != null){
       temp = temp.next
     }
   }
