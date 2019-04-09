@@ -31,6 +31,6 @@
 # CONCEPTS
   ## Bit Manipulation
   ## Memory(stack vs.Heap)
-  ## Recursion
+  ## Recursion vs iterations(when to use it)
   ## Dynamic Programming
   ## Big O Time & Space
